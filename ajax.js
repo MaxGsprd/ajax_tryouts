@@ -1,3 +1,7 @@
+//Traversy Media
+//AJAX Crash Course (Vanilla JavaScript) 
+// 27m10
+
 let btn = document.getElementById('btn').addEventListener('click',loadTxt);
 
 function loadTxt () {
