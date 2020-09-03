@@ -1,6 +1,16 @@
-<pre>
 <?php
-var_dump($_GET);
+// echo $_GET['name'];
+$db = mysqli_connect('localhost','root','root','testajax');
+
+if(isset($_POST['name'])){
+    $name = mysqli_real_escape_string($db, $_POST['name']);
+
+    $query = "INSERT INTO users(name) VALUES('$name')";
+
+    if(mysqli_query($db,$query)){
+       echo 'User added'; 
+    } else {
+        echo 'ERROR: ' . mysqli_error($conn);
+    }
+}
 ?>
-</pre>
-<?= " il va faire beau sur " . $_GET['city']; ?>
