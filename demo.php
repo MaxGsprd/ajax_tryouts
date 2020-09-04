@@ -1,16 +1,16 @@
 <?php
 // echo $_GET['name'];
-$db = mysqli_connect('localhost','root','root','testajax');
+// $db = mysqli_connect('localhost','root','','testajax');
 
-if(isset($_POST['name'])){
-    $name = mysqli_real_escape_string($db, $_POST['name']);
+// if(isset($_POST['name'])){
+//     $name = mysqli_real_escape_string($db, $_POST['name']);
 
-    $query = "INSERT INTO users(name) VALUES('$name')";
+//     $query = "INSERT INTO users(name) VALUES('$name')";
 
-    if(mysqli_query($db,$query)){
-       echo 'User added'; 
-    } else {
-        echo 'ERROR: ' . mysqli_error($conn);
-    }
-}
+//     if(mysqli_query($db,$query)){
+//        echo 'User added'; 
+//     } else {
+//         echo 'ERROR: ' . mysqli_error($conn);
+//     }
+// }
 ?>

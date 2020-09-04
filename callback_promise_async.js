@@ -10,23 +10,24 @@
 
 // }())
 
-// let links = document.querySelectorAll('.meteo');
-// for (let i = 0; i < links.length; i++) {
-//     const link = links[i];
-//     link.addEventListener('click', function(e) {
-//         e.preventDefault();
-//         let xhr = new XMLHttpRequest();
-//         xhr.onreadystatechange = function () {
-//             if (xhr.readyState === 4) {
-//                 let response = document.getElementById('result');
-//                 response.innerHTML = xhr.responseText;
-//             }
-//         }
-//         xhr.open('GET', this.firstChild.getAttribute("href"), true);
-//         xhr.send();
+let links = document.querySelectorAll('.meteo');
+for (let i = 0; i < links.length; i++) {
+    const link = links[i];
+    link.addEventListener('click', function(e) {
+        console.log('test');
+        e.preventDefault();
+        let xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4) {
+                let response = document.getElementById('result');
+                response.innerHTML = xhr.responseText;
+            }
+        }
+        xhr.open('GET', this.firstChild.getAttribute("href"), true);
+        xhr.send();
 
-//     })  
-// }
+    })  
+}
 //Exemple callback
 const posts = [
     {title: 'Post one', body: 'This is post one'},

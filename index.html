@@ -8,19 +8,31 @@
     <link rel="shortcut icon" href="#" type="image/x-icon">
 </head>
 <body>
-    <form action="demo.php" method="POST">
-        <input type="text" name="name">
-        <input type="submit" value="submit">
-    </form>
-    <ul>
-        <li class="meteo"><a href="demo.php?city=Paris">Paris</a></li>
-        <li class="meteo"><a href="demo.php?city=Courbevoie">Courbevoie</a></li>
-    </ul>
-    <button id="btn">get text file</button>
-    <div id="result"></div>
-    <ul id="demoAjax"></ul>
-    <script src="ajax.js"></script>
+    <section class="container">
+        <!-- <ul>
+            <li class="meteo"><a href="demo.php?city=Paris">Paris</a></li>
+            <li class="meteo"><a href="demo.php?city=Courbevoie">Courbevoie</a></li>
+        </ul>
+        <div id="result"></div>
+        <hr> -->
+        <h3>Ajax - GET data from text file : </h3>
+        <button id="btn">get text file</button>
+        <div id="dataText" class="result"></div>
+        <hr>
+        <h3>Ajax - GET data from JSON :</h3>
+        <div id="dataJSON" class="result"></div>
+        <hr>
+        <h3>Ajax - POST data to DB : </h3>
+        <form action="demo.php" method="POST">
+            <label for="name">name : </label>
+            <input type="text" name="name" id="name">
+            <input type="submit" value="submit">
+        </form>
+        <div id="postData" class="result"></div>
+        <hr>
+    </section>
     <!-- <script src="app.js"></script> -->
+    <script src="ajax.js"></script>
 </body>
 </html>
 
