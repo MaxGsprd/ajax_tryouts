@@ -20,15 +20,19 @@
         <div id="dataText" class="result"></div>
         <hr>
         <h3>Ajax - GET data from JSON :</h3>
-        <div id="dataJSON" class="result"></div>
+        <div id="dataJSON" class="result divUser"></div>
         <hr>
         <h3>Ajax - POST data to DB : </h3>
         <form action="demo.php" method="POST">
             <label for="name">name : </label>
             <input type="text" name="name" id="name">
-            <input type="submit" value="submit">
+            <input type="submit" value="submit" id="btnSubmit">
         </form>
-        <div id="postData" class="result"></div>
+        <div id="postData" class="result">
+            <?php if (isset($name)){
+                 echo $name;
+                 }?>
+        </div>
         <hr>
     </section>
     <!-- <script src="app.js"></script> -->

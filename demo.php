@@ -1,4 +1,12 @@
 <?php
+var_dump($_POST);
+
+if (isset($_POST['name'])) {
+    $name = $_POST['name'];
+    var_dump($name);
+}
+
+
 // echo $_GET['name'];
 // $db = mysqli_connect('localhost','root','','testajax');
 
