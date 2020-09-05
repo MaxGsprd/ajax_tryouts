@@ -15,12 +15,12 @@
      */
     function newUserCallback(url, data) {
         return new Promise(resolve =>  {
-            resolve('resolved');
             let xhr = new XMLHttpRequest();
             xhr.open('POST', url);
             xhr.onload = function () {
                 if (xhr.status === 200) {
                     console.log('new user added');
+                    resolve(xhr.responseText);
                 }
             }
             xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
