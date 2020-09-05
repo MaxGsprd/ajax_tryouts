@@ -55,7 +55,6 @@ include 'data.php';
     <script src="json_github.js"></script>
     <script src="post_to_php.js"></script>
     <script src="post_to_db.js"></script>
-    <script src="ajax.js"></script>
 </body>
 </html>
 

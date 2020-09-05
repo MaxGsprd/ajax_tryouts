@@ -20,15 +20,14 @@
             xhr.open('POST', url);
             xhr.onload = function () {
                 if (xhr.status === 200) {
-                    let responseData = xhr.responseText;
-                    console.log(responseData);
+                    console.log('new user added');
                 }
             }
             xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
             xhr.send('newUser=' + encodeURIComponent(data));
         });
     }
-
+    
       /**
      * async function waiting for newUserCallback data in order to display the new user on the list in the DOM
      */
