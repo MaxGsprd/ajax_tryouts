@@ -7,17 +7,11 @@ include 'data.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript grafikart</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="#" type="image/x-icon">
 </head>
 <body>
     <section class="container">
-        <!-- <ul>
-            <li class="meteo"><a href="data.php?city=Paris">Paris</a></li>
-            <li class="meteo"><a href="data.php?city=Courbevoie">Courbevoie</a></li>
-        </ul>
-        <div id="result"></div>
-        <hr> -->
         <h3>AJAX - GET data from text file : </h3>
         <button id="btn">get text file</button>
         <div id="dataText" class="result"></div>
@@ -34,7 +28,6 @@ include 'data.php';
         <div id="postData" class="result"></div>
         <hr>
         <h3>AJAX - POST data to DB : </h3>
-        <a href="data.php">vers data.php</a>
         <form action="data.php" method="POST">
             <label for="newUser">new username : </label>
             <input type="text" name="newUser" id="newUser">
@@ -51,10 +44,10 @@ include 'data.php';
         </div>
         <hr>
     </section>
-    <script src="textfile.js"></script>
-    <script src="json_github.js"></script>
-    <script src="post_to_php.js"></script>
-    <script src="post_to_db.js"></script>
+    <script src="js/textfile.js"></script>
+    <script src="js/json_github.js"></script>
+    <script src="js/post_to_php.js"></script>
+    <script src="js/post_to_db.js"></script>
 </body>
 </html>
 
