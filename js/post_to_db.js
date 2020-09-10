@@ -4,7 +4,7 @@
 (function (){   
     document.getElementById('newUserBtn').onclick = (e) => {
         e.preventDefault();
-        let newUser = document.getElementById('newUser').value;
+        document.getElementById('newUser').value;
         updateDbUsers();
     }
 
